@@ -16,8 +16,6 @@ const convertTranslationsDirJson = async () => {
     return acc;
   }, {});
 
-  const { target, source, destination } = args;
-
   REQUIRED_ARGS.forEach((arg) => {
     if (!args[arg]) {
       console.log('Please supply an argument for', arg);
@@ -25,12 +23,14 @@ const convertTranslationsDirJson = async () => {
     }
   });
 
+  const { target, source, destination } = args;
+
   const jsonFiles = fs
     .readdirSync(target)
     .filter((fileInDir) => path.extname(fileInDir) === '.json');
 
   if (!jsonFiles.length) {
-    console.log('No .json files found.');
+    console.log('No .json files found in target directory.');
     process.exit(1);
   }
 
