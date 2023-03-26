@@ -1,0 +1,20 @@
+{
+  "name": "translations-console-app",
+  "version": "0.1.0",
+  "description": "Convert existing translation files into Crowdin compatible formatting with message and description",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmburk/translations-console-app.git"
+  },
+  "author": "kevinmburk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinmburk/translations-console-app/issues"
+  },
+  "homepage": "https://github.com/kevinmburk/translations-console-app#readme"
+}
