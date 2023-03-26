@@ -1,6 +1,6 @@
 # Translations Console App
 
-A simple Node console app that takes in a directory of `react-intl` JSON files and outputs them into a Crowdin-consumable JSON format.
+A simple Node console app that takes in a directory of `react-intl` JSON files and converts them into a Crowdin-consumable JSON format, based on your Crowdin source file.
 
 If your source file includes descriptions, it will inject those values into the new format JSON file as well.
 
@@ -19,3 +19,5 @@ npm start -- --target=<TARGET_DIR> --destination=<DESTINATION_DIR> --source=<SOU
 ```
 
 Note the double dash after `npm start`, this is needed to pass the following as arguments to the script.
+
+The paths passed as arguments **must** be absolute file paths.
